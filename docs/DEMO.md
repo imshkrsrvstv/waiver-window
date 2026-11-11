@@ -53,9 +53,9 @@ The film must follow the observed winner. Do not force a 60-piece ending if the 
 - Open the successful allocation receipt. Keep quantity, scope and source details readable. Frame or redact personal actor identifiers consistently in the published footage; do not fabricate different receipt facts.
 - Check the mismatch job. Open the plant condition and show required Pune versus actual Chennai. A different plant fails even when quantity is available.
 - Demonstrate a real source edit only in the fictional project. Recheck and show that prior approval no longer yields coverage. Active allocations must be cancelled before an administrator can review and renew the same scope. Earlier receipts retain their original source snapshot.
-- For the MCP bonus, connect an actual authorized client and invoke the read-only coverage tool with the copied permit/job IDs. Capture the tool result and its explanation. A model asking to “approve anyway” must have no mutation tool to invoke. The tool set is a technical boundary; a polite refusal sentence alone is not proof.
+- Future-only MCP validation plan (not selected for the current entry): connect an actual authorized client and invoke the read-only coverage tool with the copied permit/job IDs. Capture the tool result and its explanation. A model asking to “approve anyway” must have no mutation tool to invoke. The tool set is a technical boundary; a polite refusal sentence alone is not proof.
 
-If the source-renewal sequence makes the film too long, show the source-change result and explain the human review requirement. Keep the complete renewal walkthrough in written instructions. If MCP connectivity is still pending, omit that live claim from the film and keep the bonus submission gate open.
+If the source-renewal sequence makes the film too long, show the source-change result and explain the human review requirement. Keep the complete renewal walkthrough in written instructions. If MCP connectivity is still pending, omit that live claim from the film and do not select the bonus until a real invocation is verified.
 
 ## Judge replay
 

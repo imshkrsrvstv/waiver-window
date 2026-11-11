@@ -38,10 +38,10 @@ Observed 11 November 2026 in the normal production Jira project page. Production
 | Verification | Observed result |
 | --- | --- |
 | Existing draft and human approval | Draft coverage was blocked. Explicit approval preserved the existing permit ID and its 500-piece scope. |
-| First allocation | A checked 320-piece job allocated successfully:320 allocated,180 remaining. |
-| Sequential second allocation | A 120-piece job allocated successfully:440 allocated,60 remaining. |
+| First allocation | A checked 320-piece job allocated successfully: 320 allocated, 180 remaining. |
+| Sequential second allocation | A 120-piece job allocated successfully: 440 allocated, 60 remaining. |
 | Over-allowance protection | A 100-piece job failed quantity by 40; its allocation button was disabled. |
-| Cancellation | Cancelling the 120-piece allocation returned the explicit restoration message and showed320 allocated,180 remaining. Duplicate cancellation was not tested live. |
+| Cancellation | Cancelling the 120-piece allocation returned the explicit restoration message and showed 320 allocated, 180 remaining. Duplicate cancellation was not tested live. |
 | Exact plant scope | An 80-piece Chennai job failed the expected Pune plant condition while quantity passed; allocation remained disabled. |
 | External MCP | Exposure enabled. OAuth reached consent but failed before callback; no token or authenticated tool result. Cause unestablished. |
 
