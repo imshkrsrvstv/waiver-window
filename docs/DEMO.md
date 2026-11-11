@@ -1,73 +1,68 @@
-# Demonstration guide
+# Judge walkthrough
 
-The film follows one coherent story: **problem → solution and real walkthrough → closing**. Target length is approximately 3 minutes 54 seconds, with a hard delivery ceiling below five minutes. The current storyboard is a production plan; live footage and external MCP results are not yet attached.
+Replay the core workflow in your own Jira project: approve an exact exception, allocate a finite allowance, reject a request that no longer fits, cancel one allocation, and inspect a plant mismatch. These are **sequential actions**, matching the verified production walkthrough.
 
-This guide is the self-contained replay and film plan. Never relabel the local demo as an installed Jira app.
+The finished local film is **2 minutes 50.5 seconds** and uses actual Jira captures with fictional records. Its public video URL remains pending. The [installation guide](DEPLOYMENT.md#judge-distribution) contains the actual production sharing link. The installer preview has been verified; a separate judge-site installation and clean-site replay have not yet been verified.
 
-## One fictional case
+## Install and prepare five fictional issues
 
-A packaging coordinator has a human-approved exception for a cosmetic print-tone variation on gift sleeves. These are fictional, noncritical records, unrelated to real customers or shipments.
+A Jira site administrator installs the app. Use an authorized project where you can create, read and edit fictional issues. Approval, renewal and revocation require that project's administrator permission. The ordinary Jira workflow needs no external API key or MCP client.
 
-| Field                        | Value                                      |
-| ---------------------------- | ------------------------------------------ |
-| Supplier                     | Nori Printworks                            |
-| Part / revision              | SLEEVE-04 / C                              |
-| Plant                        | Pune                                       |
-| Allowed lots                 | LOT-26-A and LOT-26-B                      |
-| Unit                         | pieces                                     |
-| Total allowance              | 500                                        |
-| Earlier job allocation       | 320                                        |
-| Remaining before the contest | 180                                        |
-| Job A                        | 120 pieces; exact matching scope; LOT-26-A |
-| Job B                        | 100 pieces; exact matching scope; LOT-26-B |
-| Mismatch job                 | 80 pieces; Chennai plant; otherwise matching  |
+Create these five ordinary Jira issues and keep their actual keys. Waiver Window does not create them for you. Do not reuse the creator's issue keys; they belong to a separate site.
 
-Choose actual accessible Jira issue keys during setup. Never paste illustrative keys as though they exist. Set the effective time before capture and expiry sufficiently after capture, record both in the scenario manifest, and keep dates unchanged during the story. The app displays local time and stores precise timestamps.
+| Issue | Suggested title | Purpose |
+| --- | --- | --- |
+| Source | Gift sleeve print-tone variation | Describes the fictional cosmetic exception and its exact scope below |
+| First job | Earlier gift-sleeve allocation | 320 pieces, lot LOT-26-A, Pune |
+| Cedar | Cedar gift sleeves / lot A | 120 pieces, lot LOT-26-A, Pune |
+| Maple | Maple gift sleeves / lot B | 100 pieces, lot LOT-26-B, Pune |
+| Mismatch | Chennai packing run | 80 pieces, lot LOT-26-A, Chennai |
 
-## Prepare the live workspace
+These are noncritical gift sleeves with a cosmetic print-tone variation, unrelated to real customers, shipments, food contact or safety functions. Use only fictional or otherwise authorized information.
 
-1. Install the production or approved development build and open Waiver Window inside an existing Jira project authorized for fictional tests.
-2. Create a source issue describing the fictional exception and four job issues: prior allocation, A, B and mismatch. These are ordinary Jira issues the app can read; it does not silently create them.
-3. Create the exception through the app with exact fields and a 500-piece limit. Review it as a project administrator, then explicitly approve it.
-4. Create the earlier 320-piece job, check it and allocate it. Refresh: the ruler should show 320 allocated and 180 available. Preserve its receipt.
-5. Create jobs A, B and the mismatch job. Copy their full IDs and the permit ID from the collapsed provenance panel into the private capture manifest. Public fictional record IDs may appear in the film; credentials and account identifiers may not.
-6. Rehearse camera positions without allocating the competing jobs. Capture the real allocation attempt only when the evidence recorder is ready.
+## Create the permit and jobs
 
-## The concurrency moment
+Open **Waiver Window** from the project navigation. A new installation starts empty and does not copy the creator's records. Create a permit linked to your source issue using these exact fields:
 
-Both A and B should initially pass coverage because each asks for fewer than 180 pieces. Their combined request is 220, so both must not allocate.
+| Field | Value |
+| --- | --- |
+| Title | Gift sleeve print-tone variation |
+| Supplier | Nori Printworks |
+| Part | SLEEVE-04 |
+| Revision | C |
+| Plant | Pune |
+| Allowed lots | LOT-26-A and LOT-26-B |
+| Unit | pieces |
+| Quantity limit | 500 |
+| Effective date/time | Before your current test, for example yesterday |
+| Expiry date/time | After your current test, for example seven days from now |
 
-To prove a race, dispatch two authorized `reserve` requests with distinct stable request IDs at overlapping times against the same live allowance. Use the ordinary authenticated Forge path. Preserve start/end timestamps, both full result envelopes, canonical final balance and the new receipt count. A test harness may orchestrate the calls; label that shot **Live integration test**, followed by the actual app showing the result.
+**Choose dates relative to the time you actually run this test.** Do not copy the film's November dates: that example expires. Keep the window unchanged through the walkthrough. The form displays local time and stores precise timestamps.
 
-Sequential native-browser clicks demonstrate ordinary capacity enforcement, not concurrency. If only that capture is available, narrate it as sequential allocation and place the separately verified local race in a clearly labeled engineering-test appendix. Do not splice two successes from different states into one apparent run.
+Create four jobs in the app linked to the corresponding actual job issue keys. Use the same supplier, part, revision and unit as the permit; use each job's quantity, lot and plant from the first table. Each job is canonical to its Jira issue, so use four separate issues.
 
-| Real result            | Expected final state                               |
-| ---------------------- | -------------------------------------------------- |
-| A's 120 succeeds first | 440 allocated, 60 available; B cannot allocate 100 |
-| B's 100 succeeds first | 420 allocated, 80 available; A cannot allocate 120 |
+If you already approved a permit for this source, use that existing allowance. The first approval permanently binds one permit to its source within the installation. Another draft cannot create a second approved allowance; revocation does not release the binding. For a fresh independent replay, create a new fictional source and four new job issues rather than trying to duplicate an existing source's allowance.
 
-The film must follow the observed winner. Do not force a 60-piece ending if the real run leaves 80. Retry the successful request with its original ID only if a live retry mechanism is available; verify the same receipt and unchanged balance. The normal UI preventing a second allocation is useful but does not by itself prove request-ID idempotency.
+## Replay the verified sequence
 
-## Walkthrough after the conflict
+1. **Check the 320-piece job while the permit is a draft.** Coverage must stop for review; the draft does not authorize an allocation.
+2. **Approve the permit.** As a project administrator, review the exact scope and linked source, then explicitly confirm approval. The limit is still 500 and nothing has been allocated yet.
+3. **Check and allocate 320.** Select the first job, run the coverage check, review the allocation dialog and confirm. Expect **320 allocated, 180 available**.
+4. **Check and allocate Cedar's 120.** Its identifiers match. Confirm the allocation. Expect **440 allocated, 60 available**.
+5. **Check Maple's 100.** Its quantity exceeds the 60 available by 40. The quantity condition fails and allocation remains disabled. Do not allocate this job.
+6. **Cancel Cedar's 120 allocation.** Select its existing allocation, enter a fictional test reason and confirm cancellation. Expect **320 allocated, 180 available** again. The historical record remains; cancellation does not erase it.
+7. **Check the Chennai job's 80.** Quantity fits the 180 available, but the plant does not. Expand the plant condition to see **expected Pune, actual Chennai**. Allocation remains disabled.
+8. **Inspect history.** The first 320-piece allocation is active and Cedar's 120 is cancelled. The remaining allowance is 180. Switch between light and dark themes to inspect the same records. Receipts include actor/account provenance, so do not publish an unredacted receipt containing personal identifiers.
 
-- Open the successful allocation receipt. Keep quantity, scope and source details readable. Frame or redact personal actor identifiers consistently in the published footage; do not fabricate different receipt facts.
-- Check the mismatch job. Open the plant condition and show required Pune versus actual Chennai. A different plant fails even when quantity is available.
-- Demonstrate a real source edit only in the fictional project. Recheck and show that prior approval no longer yields coverage. Active allocations must be cancelled before an administrator can review and renew the same scope. Earlier receipts retain their original source snapshot.
-- Future-only MCP validation plan (not selected for the current entry): connect an actual authorized client and invoke the read-only coverage tool with the copied permit/job IDs. Capture the tool result and its explanation. A model asking to “approve anyway” must have no mutation tool to invoke. The tool set is a technical boundary; a polite refusal sentence alone is not proof.
+If a condition differs, read its expected and actual values rather than bypassing it. Check the issue permissions, exact identifiers, approval state and current dates. Editing the source after approval intentionally makes coverage require review; leave the source unchanged during this basic replay.
 
-If the source-renewal sequence makes the film too long, show the source-change result and explain the human review requirement. Keep the complete renewal walkthrough in written instructions. If MCP connectivity is still pending, omit that live claim from the film and do not select the bonus until a real invocation is verified.
+## Optional engineering checks
 
-## Judge replay
+These are separate from the recorded production walkthrough. Their local automated tests are documented in [TESTING.md](TESTING.md); live execution has **not** been verified for these advanced cases.
 
-The public installation link must work before these become final judge instructions. A Jira administrator installs the app; a project administrator approves the fictional exception; a user with job edit permission allocates. Use the setup steps above on the judge's own accessible project. The project page supports inspection; issue-panel visibility also depends on Jira's issue editing context.
+- **Overlapping requests:** the conditional ledger is designed to admit at most one of 120 and 100 when only 180 remains. A live concurrency claim requires actual overlapping authenticated requests and recorded results. Sequential clicks do not establish it.
+- **Changed source and renewal:** edit only a fictional source, then recheck. Positive coverage should stop. Renewal requires an administrator, an approved and unexpired permit, unchanged scope and zero active allocations. Old receipts retain their original snapshots. Revoke is a separate action and cannot be undone by renewal.
+- **Duplicate retries and source ownership:** retry the same request without creating a new allocation; verify a second draft cannot approve against an already-bound source. These invariants have local tests; their installed-site retry/concurrency evidence remains separate.
+- **External MCP:** three read-only tools are implemented. Administrator exposure is enabled on the creator's test installation, but three authorization attempts returned an error after consent and before callback. No external tool result is verified, and the current entry claims no MCP bonus. A separate installation requires its own administrator enablement and user consent; see [DEPLOYMENT.md](DEPLOYMENT.md). An agent cannot approve, allocate or cancel.
 
-The app's ordinary workflow needs no external API keys. Optional agent access needs Rovo availability, administrator tool enablement and client consent. Full setup is in [DEPLOYMENT.md](DEPLOYMENT.md). Read-only tools take existing app IDs, which can be copied from provenance; they do not search for or invent a permit.
-
-## Film quality requirements
-
-- Compose a constant 1920×1080 output at 30 fps. Capture each app clip at a fixed 1600×900 viewport. Never resize the browser mid-shot.
-- Establish the full desk, then use restrained close-ups around 1.25–1.45× on a condition, quantity or confirmation. Measure actual control bounds after capture; do not invent camera coordinates now.
-- Use porcelain, ink, oxidized copper and brass. The opening uses two job requests competing for one visible allowance, rather than a generic animated dashboard.
-- Prefer natural synthetic narration with measured pauses. Check “Waiver Window,” “Jira,” “Rovo,” and every quantity by listening to the final audio. No purchased voice, cloned identity or music is needed.
-- Provide subtitles. Inspect encoded footage for blank bands, clipping, legible text, uninterrupted action order, transitions and phone-sized playback. Audio analysis alone is not a listening review.
-- Label editorial diagrams separately from actual app evidence. Do not publish account menus, emails, tokens, browser history or private issue content.
+Waiver Window records an app allowance and supports human review. It does not control physical inventory, release shipments or certify product safety.
