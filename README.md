@@ -40,7 +40,13 @@ Open `http://127.0.0.1:4351/`. This is an explicitly labeled **Local demo** with
 
 `npm run build` creates the production resource in `static/app/dist`. That build uses the real Forge bridge and fails visibly outside an installed Jira host. It never loads fixtures as a fallback. For registration, deployment, installation and external MCP consent, follow [DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
-**Judge installation link, live demo video and submission URL are pending verification.** No placeholder link should be submitted. See the release gates in [SUBMISSION.md](docs/SUBMISSION.md).
+## Install for evaluation
+
+[Install Waiver Window for Jira](https://developer.atlassian.com/console/install/90d15fc4-8d94-4ac8-9775-3dcd62b4d6ae?signature=AYABeAtzhE%2FzmYY60ny7bNeXlHIAAAADAAdhd3Mta21zAEthcm46YXdzOmttczp1cy13ZXN0LTI6NzA5NTg3ODM1MjQzOmtleS83MDVlZDY3MC1mNTdjLTQxYjUtOWY5Yi1lM2YyZGNjMTQ2ZTcAuAECAQB4CxqLTo9l4lqXuFjNim1xJM%2Bp%2F3TVP9xHS2BrU5DRRucBV8VdAUh4Z%2BZaj49WpsqDPwAAAH4wfAYJKoZIhvcNAQcGoG8wbQIBADBoBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDDFSAksKaWMa5FpBdQIBEIA7MjTNLZ0dOl3UsMN1Gmi4AsTJfTyG%2Bhv528Ib12qxC%2B6qsP7g4nYVW5PoOV1xeggXdT8oTt9cAZ1YsX0AB2F3cy1rbXMAS2Fybjphd3M6a21zOmV1LXdlc3QtMTo3MDk1ODc4MzUyNDM6a2V5LzQ2MzBjZTZiLTAwYzMtNGRlMi04NzdiLTYyN2UyMDYwZTVjYwC4AQICAHi9bVMAkme4qVQX1fQHo6ePw3H40A7cGfz7yrmSfBWMXgEfpTACAZDyXrmiC0vwkmy%2FAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMHANLEB9NHwfm%2F7jTAgEQgDuSDImoAsW1jIFEGjHdWrS4Ttm94VZFR3ppfJci3mAK0Tcyf4GAq0tjCN1dr%2BlGk3N7Zu9ulkCgFwrStwAHYXdzLWttcwBLYXJuOmF3czprbXM6dXMtZWFzdC0xOjcwOTU4NzgzNTI0MzprZXkvNmMxMjBiYTAtNGNkNS00OTg1LWI4MmUtNDBhMDQ5NTJjYzU3ALgBAgIAeDYASx0XCjkny4iLV6vz%2BKtEGSGT6kdt0QRpkn6D%2FlVEARQqvgJLEKzwThaCXam52okAAAB%2BMHwGCSqGSIb3DQEHBqBvMG0CAQAwaAYJKoZIhvcNAQcBMB4GCWCGSAFlAwQBLjARBAzZEHHoubZCNLXD9pgCARCAO%2FFHB65GbvjWgz8GQPHW%2FndrT5WOQLaRAopTK6OaoXAPlctu9gnUN9x7f4%2F6H9crZz8CfFWUlwq6ODELAgAAAAAMAAAQAAAAAAAAAAAAAAAAAOx1Afrnd68xdB7SouKfrOD%2F%2F%2F%2F%2FAAAAAQAAAAAAAAAAAAAAAQAAADLTf4waqVgPyU9o5atXzynymcSFhieJ9eayer2Q11V5TbF0ZDsa9fcRVaKkDDax4wUga%2Fulorj4z5vgJ6kmSTWjNqk%3D&product=jira). A Jira site administrator must complete installation.
+
+The installer preview has been opened and checked: Waiver Window, Get app, For Jira, read-Jira and app-storage permissions, and the linked vendor policies. A separate judge-site installation and clean-site walkthrough have not yet been verified.
+
+Follow [the setup guide](docs/DEPLOYMENT.md) and [fictional walkthrough](docs/DEMO.md). New installations start empty. **The public demo video and Devpost confirmation remain pending.** See [SUBMISSION.md](docs/SUBMISSION.md) for the current gates.
 
 ## How the decision stays grounded
 
@@ -104,7 +110,7 @@ No customer study or financial outcome is claimed. The proposed validation is fi
 
 [Public source](https://github.com/imshkrsrvstv/waiver-window) · [Setup guide](https://github.com/imshkrsrvstv/waiver-window/blob/main/docs/DEPLOYMENT.md) · [Privacy](https://github.com/imshkrsrvstv/waiver-window/blob/main/PRIVACY.md) · [Evaluation terms](https://github.com/imshkrsrvstv/waiver-window/blob/main/TERMS.md) · [Support](https://github.com/imshkrsrvstv/waiver-window/issues)
 
-The original source is MIT licensed; Atlassian SDK packages retain their own terms. The public source release does not imply a completed Devpost submission, judge installation link or finished film. Those links will be added only after verification.
+The original source is MIT licensed; Atlassian SDK packages retain their own terms. The public source release does not imply a completed Devpost submission, an independent judge-site installation or a finished film. New links are added only after verification.
 
 ## License and data handling
 
