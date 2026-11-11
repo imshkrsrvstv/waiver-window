@@ -1,6 +1,6 @@
 # Codegeist submission checklist
 
-Snapshot: 11 November 2026. This is a release checklist, not proof of submission. Paste-ready text lives in [DEVPOST-FIELDS.md](DEVPOST-FIELDS.md); structured fields live in [devpost-fields.json](devpost-fields.json).
+Snapshot: 11 November 2026. [Final Codegeist submission](https://devpost.com/software/waiver-window) is confirmed by the native “Project submitted!” message and the resulting event association. Saved field text lives in [DEVPOST-FIELDS.md](DEVPOST-FIELDS.md); structured fields live in [devpost-fields.json](devpost-fields.json).
 
 ## Official requirements
 
@@ -30,7 +30,7 @@ Keep only this curated confirmation; no identity documents, employer details or 
 | Public source           | Reviewed source published at https://github.com/imshkrsrvstv/waiver-window; fresh extracted validation passed                                                                                                              | Source release 0.1.0 and checksum are public and independently verified                                               |
 | Film | [Public YouTube walkthrough](https://youtu.be/YmgVQLZgSYg), 170.526 seconds, actual Jira captures, 51 English subtitle cues published | Native publication, anonymous player readiness and manual English captions verified; audible playback is a separate check |
 | Thumbnail               | Original 1440 × 960 design supplied separately                                                                                                                                     | Inspect uploaded crop and rendered project card                                              |
-| Final form              | English copy and structured field draft prepared                                                                                                                                   | Match actual prompts, insert verified links, submit and verify confirmation                  |
+| Final form | Submitted to Codegeist 2026: correct category, no bonus, source/app/install links, thumbnail, 5,537-character story and public video saved | Native Project submitted! confirmation and SUBMITTED TO Codegeist 2026 verified |
 
 Source of the technical snapshot: [test record](TESTING.md) and reviewed release validation. No live result is inferred from a local fixture, successful build, screenshot or manifest entry. Installed-site and external-client results are recorded separately as verification completes.
 

@@ -46,7 +46,7 @@ Open `http://127.0.0.1:4351/`. This is an explicitly labeled **Local demo** with
 
 The installer preview has been opened and checked: Waiver Window, Get app, For Jira, read-Jira and app-storage permissions, and the linked vendor policies. A separate judge-site installation and clean-site walkthrough have not yet been verified.
 
-Follow [the setup guide](docs/DEPLOYMENT.md) and [fictional walkthrough](docs/DEMO.md). New installations start empty. [Watch the public walkthrough](https://youtu.be/YmgVQLZgSYg) — 2 minutes 50.5 seconds, with English subtitles. **The Devpost draft is being completed; final submission is not yet confirmed.** See [SUBMISSION.md](docs/SUBMISSION.md) for the current gates.
+Follow [the setup guide](docs/DEPLOYMENT.md) and [fictional walkthrough](docs/DEMO.md). New installations start empty. [Watch the public walkthrough](https://youtu.be/YmgVQLZgSYg) — 2 minutes 50.5 seconds, with English subtitles. **[Submitted to Codegeist 2026](https://devpost.com/software/waiver-window)** — the final confirmation and event association were verified on 11 November 2026. See [SUBMISSION.md](docs/SUBMISSION.md) for the current gates.
 
 ## How the decision stays grounded
 
@@ -110,7 +110,7 @@ No customer study or financial outcome is claimed. The proposed validation is fi
 
 [Public source](https://github.com/imshkrsrvstv/waiver-window) · [Setup guide](https://github.com/imshkrsrvstv/waiver-window/blob/main/docs/DEPLOYMENT.md) · [Privacy](https://github.com/imshkrsrvstv/waiver-window/blob/main/PRIVACY.md) · [Evaluation terms](https://github.com/imshkrsrvstv/waiver-window/blob/main/TERMS.md) · [Support](https://github.com/imshkrsrvstv/waiver-window/issues)
 
-The original source is MIT licensed; Atlassian SDK packages retain their own terms. The public source release does not imply a completed Devpost submission, an independent judge-site installation. New links are added only after verification.
+The original source is MIT licensed; Atlassian SDK packages retain their own terms. The Devpost submission is confirmed separately from the source release. A separate judge-site installation and external MCP execution remain unverified.
 
 ## License and data handling
 

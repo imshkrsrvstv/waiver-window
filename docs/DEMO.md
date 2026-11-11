@@ -4,6 +4,8 @@ Replay the core workflow in your own Jira project: approve an exact exception, a
 
 [Watch the public walkthrough](https://youtu.be/YmgVQLZgSYg) — **2 minutes 50.5 seconds**, with English subtitles. It uses actual Jira captures and fictional records; the recorded requests are sequential. The [installation guide](DEPLOYMENT.md#judge-distribution) contains the actual production sharing link. The installer preview has been verified; a separate judge-site installation and clean-site replay have not yet been verified.
 
+[View the submitted Codegeist project](https://devpost.com/software/waiver-window). Final submission and its event association were confirmed on 11 November 2026.
+
 ## Install and prepare five fictional issues
 
 A Jira site administrator installs the app. Use an authorized project where you can create, read and edit fictional issues. Approval, renewal and revocation require that project's administrator permission. The ordinary Jira workflow needs no external API key or MCP client.

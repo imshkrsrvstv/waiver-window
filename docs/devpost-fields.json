@@ -1,6 +1,6 @@
 {
   "preparedOn": "2026-11-11",
-  "status": "editorial-draft-not-submitted",
+  "status": "submitted-and-confirmed",
   "name": "Waiver Window",
   "tagline": "A Jira approval has a boundary. Check exact scope, allocate its finite allowance, and keep agents read-only.",
   "category": "Apps for Specialized Industries",
@@ -29,7 +29,7 @@
     "publicSource": "https://github.com/imshkrsrvstv/waiver-window",
     "publicSetupGuide": "https://github.com/imshkrsrvstv/waiver-window/blob/main/docs/DEPLOYMENT.md",
     "youtubeDemo": "https://youtu.be/YmgVQLZgSYg",
-    "devpostProject": null,
+    "devpostProject": "https://devpost.com/software/waiver-window",
     "mcpEndpoint": "https://mcp.atlassian.com/forge/90d15fc4-8d94-4ac8-9775-3dcd62b4d6ae",
     "sourceRelease": "https://github.com/imshkrsrvstv/waiver-window/releases/tag/v0.1.0"
   },
@@ -58,11 +58,10 @@
     "exclusions": [
       "No live concurrency result",
       "No external MCP execution",
-      "No independent judge-site installation",
-      "No final Devpost submission"
+      "No independent judge-site installation"
     ]
   },
-  "submissionState": "Project draft created after human verification; final submission not yet confirmed.",
+  "submissionState": "Submitted to Codegeist 2026; actual Project submitted! confirmation and SUBMITTED TO Codegeist 2026 association verified on 11 November 2026.",
   "videoVerification": {
     "state": "public publication confirmed in YouTube",
     "durationSeconds": 170.526,
@@ -71,6 +70,24 @@
     "story": "Problem, solution, actual sequential Jira walkthrough and closing",
     "liveConcurrencyClaim": false,
     "liveExternalMcpClaim": false,
-    "anonymousAccess": "oEmbed and watch HTTP 200; player readiness OK; public; manual English captions available."
+    "anonymousAccess": "oEmbed and watch HTTP 200; player readiness OK; public; manual English captions available.",
+    "publicTitle": "Waiver Window \u2014 Exact-scope exceptions in Jira | Codegeist 2026",
+    "titleAndDescription": "Exact prepared title and description independently verified in public metadata",
+    "publicAccess": "Public and not unlisted; player readiness OK; manual English captions listed"
+  },
+  "submissionConfirmation": {
+    "confirmedOn": "2026-11-11",
+    "recordedAt": "2026-11-11T13:43:18.575302+00:00",
+    "message": "Project submitted!",
+    "event": "Codegeist 2026",
+    "eventAssociation": "SUBMITTED TO Codegeist 2026",
+    "url": "https://devpost.com/software/waiver-window",
+    "verifiedBy": "Native browser confirmation and actual public address",
+    "embeddedVideo": "https://youtu.be/YmgVQLZgSYg",
+    "category": "Apps for Specialized Industries",
+    "bonus": null,
+    "thumbnailSaved": true,
+    "storyCharacters": 5537,
+    "storySha256": "9d433ad32bfb06b243798905de5ca31b1c35b041b4d768615d3cd052858e4c4e"
   }
 }

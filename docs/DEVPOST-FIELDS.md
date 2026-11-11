@@ -1,6 +1,6 @@
-# Devpost fields — ready-to-paste draft
+# Devpost fields — submitted entry record
 
-Prepared 11 November 2026. Copy only the field content, not the editorial notes. This file is not a submission receipt. External connectivity, independent judge installation and final submission remain separate gates in [SUBMISSION-CHECKLIST.md](SUBMISSION-CHECKLIST.md). Actual form prompts and limits take precedence; these names follow Devpost's [submission guide](https://help.devpost.com/article/126-know-your-submission-steps).
+Submitted on 11 November 2026: [Waiver Window](https://devpost.com/software/waiver-window). The native browser displayed “Project submitted!” and “SUBMITTED TO Codegeist 2026”; the saved project embeds the correct public film. The 5,537-character story matches the prepared content below. External connectivity and independent judge installation remain unverified, as recorded in [SUBMISSION-CHECKLIST.md](SUBMISSION-CHECKLIST.md). Actual form prompts and limits take precedence; these names follow Devpost's [submission guide](https://help.devpost.com/article/126-know-your-submission-steps).
 
 ## Project name
 
@@ -103,7 +103,7 @@ The actual installation and public guide links are recorded below. A separate cl
 | Public setup guide            | https://github.com/imshkrsrvstv/waiver-window/blob/main/docs/DEPLOYMENT.md                                                              | Verify guide is accessible without the owner's session                        |
 | Public YouTube demo | [Watch Waiver Window](https://youtu.be/YmgVQLZgSYg) | Published; 170.526 seconds; English subtitles published |
 | External MCP endpoint         | https://mcp.atlassian.com/forge/90d15fc4-8d94-4ac8-9775-3dcd62b4d6ae | Endpoint derives from registered app; live authorization/result still pending |
-| Devpost project               | Pending                                                              | Record actual project URL and separate submitted confirmation                 |
+| Devpost project | [Waiver Window](https://devpost.com/software/waiver-window) | Final submission confirmation and Codegeist 2026 association verified |
 
 The private development tenant is not a substitute for an installable judge link. Do not use the editorial-only film as the demo video.
 

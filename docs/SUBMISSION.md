@@ -1,8 +1,8 @@
-# Codegeist submission draft
+# Codegeist submission record
 
-Paste-ready fields: [DEVPOST-FIELDS.md](DEVPOST-FIELDS.md). Current evidence gates: [SUBMISSION-CHECKLIST.md](SUBMISSION-CHECKLIST.md).
+Saved field copy: [DEVPOST-FIELDS.md](DEVPOST-FIELDS.md). Current evidence gates: [SUBMISSION-CHECKLIST.md](SUBMISSION-CHECKLIST.md).
 
-Status: prepared for review; **not evidence of a submitted entry**. The source and local tests are implemented. Development and production deployment, installation and project-page bootstrap are verified. Normal approval, sequential allocations, over-allowance protection, cancellation/restoration and plant mismatch passed in the installed production UI. The public judge installer preview is verified; the public film and English subtitles are published. Independent judge-site installation, external MCP and final Devpost submission remain separate verification gates.
+Status: **[submitted to Codegeist 2026](https://devpost.com/software/waiver-window)**. On 11 November 2026 the native browser displayed “Project submitted!”, and the resulting project showed “SUBMITTED TO Codegeist 2026” with the correct embedded film. The source and local tests are implemented. Development and production deployment, installation and project-page bootstrap are verified. Normal approval, sequential allocations, over-allowance protection, cancellation/restoration and plant mismatch passed in the installed production UI. The public judge installer preview is verified; the public film and English subtitles are published. Independent judge-site installation and external MCP execution remain unverified.
 
 ## Entry positioning
 
@@ -13,7 +13,7 @@ Status: prepared for review; **not evidence of a submitted entry**. The source a
 
 The deadline is 22 December 2026 at noon PST, or 23 December at 01:30 IST. The entry needs an installable Forge app, configuration instructions, a project description, and a public YouTube video under five minutes showing it working. The MCP bonus uses `rovo:mcp`. These requirements were rechecked on 11 November 2026. [Official rules](https://codegeist2026.devpost.com/rules)
 
-## Project description draft
+## Submitted project description
 
 ### Inspiration
 
@@ -71,7 +71,7 @@ Three read-only Rovo/MCP tools are implemented. External MCP execution remains u
 | Production judge installation | [Install Waiver Window for Jira](https://developer.atlassian.com/console/install/90d15fc4-8d94-4ac8-9775-3dcd62b4d6ae?signature=AYABeAtzhE%2FzmYY60ny7bNeXlHIAAAADAAdhd3Mta21zAEthcm46YXdzOmttczp1cy13ZXN0LTI6NzA5NTg3ODM1MjQzOmtleS83MDVlZDY3MC1mNTdjLTQxYjUtOWY5Yi1lM2YyZGNjMTQ2ZTcAuAECAQB4CxqLTo9l4lqXuFjNim1xJM%2Bp%2F3TVP9xHS2BrU5DRRucBV8VdAUh4Z%2BZaj49WpsqDPwAAAH4wfAYJKoZIhvcNAQcGoG8wbQIBADBoBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDDFSAksKaWMa5FpBdQIBEIA7MjTNLZ0dOl3UsMN1Gmi4AsTJfTyG%2Bhv528Ib12qxC%2B6qsP7g4nYVW5PoOV1xeggXdT8oTt9cAZ1YsX0AB2F3cy1rbXMAS2Fybjphd3M6a21zOmV1LXdlc3QtMTo3MDk1ODc4MzUyNDM6a2V5LzQ2MzBjZTZiLTAwYzMtNGRlMi04NzdiLTYyN2UyMDYwZTVjYwC4AQICAHi9bVMAkme4qVQX1fQHo6ePw3H40A7cGfz7yrmSfBWMXgEfpTACAZDyXrmiC0vwkmy%2FAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMHANLEB9NHwfm%2F7jTAgEQgDuSDImoAsW1jIFEGjHdWrS4Ttm94VZFR3ppfJci3mAK0Tcyf4GAq0tjCN1dr%2BlGk3N7Zu9ulkCgFwrStwAHYXdzLWttcwBLYXJuOmF3czprbXM6dXMtZWFzdC0xOjcwOTU4NzgzNTI0MzprZXkvNmMxMjBiYTAtNGNkNS00OTg1LWI4MmUtNDBhMDQ5NTJjYzU3ALgBAgIAeDYASx0XCjkny4iLV6vz%2BKtEGSGT6kdt0QRpkn6D%2FlVEARQqvgJLEKzwThaCXam52okAAAB%2BMHwGCSqGSIb3DQEHBqBvMG0CAQAwaAYJKoZIhvcNAQcBMB4GCWCGSAFlAwQBLjARBAzZEHHoubZCNLXD9pgCARCAO%2FFHB65GbvjWgz8GQPHW%2FndrT5WOQLaRAopTK6OaoXAPlctu9gnUN9x7f4%2F6H9crZz8CfFWUlwq6ODELAgAAAAAMAAAQAAAAAAAAAAAAAAAAAOx1Afrnd68xdB7SouKfrOD%2F%2F%2F%2F%2FAAAAAQAAAAAAAAAAAAAAAQAAADLTf4waqVgPyU9o5atXzynymcSFhieJ9eayer2Q11V5TbF0ZDsa9fcRVaKkDDax4wUga%2Fulorj4z5vgJ6kmSTWjNqk%3D&product=jira); installer preview verified | Independent clean-site installation and walkthrough remain unverified |
 | Video | [Public YouTube walkthrough](https://youtu.be/YmgVQLZgSYg), 170.526 seconds, English subtitles published | Native publication and anonymous player readiness verified; audible playback is a separate check |
 | External MCP bonus            | Module implemented; OAuth failed before callback; no bonus claimed       | Real client result, setup guide and video segment                     |
-| Devpost entry | Project draft created; final submission not yet confirmed | Submitted project URL and confirmation |
+| Devpost entry | [Submitted Waiver Window project](https://devpost.com/software/waiver-window) | Native final confirmation, event association and correct embedded video verified |
 | Entrant declarations          | Owner confirmed for Codegeist on 11 November | Retain curated confirmation; match any additional actual form prompts |
 
 For judge distribution, deploy the verified production build and enable Sharing in the Forge developer console. Test the actual installation link. Marketplace-listed or licensed builds have distribution restrictions; do not break judge access to pursue an unselected Marketplace bonus. [Forge distribution guide](https://developer.atlassian.com/platform/forge/distribute-your-apps/)
