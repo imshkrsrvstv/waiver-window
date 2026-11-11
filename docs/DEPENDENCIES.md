@@ -1,0 +1,9 @@
+# Pinned dependencies and review
+
+Reviewed 11 November 2026. Backend runtime: official Atlassian `@forge/api` 8.5.0, `@forge/kvs` 2.1.2, `@forge/resolver` 2.0.2. Dependencies were installed with scripts disabled and a checked-in lockfile. No runtime package hook was executed. The Custom Entity transaction methods and filter conditions were checked against the published package and official documentation before implementation.
+
+Initial backend npm audit found 5 moderate findings through Forge's manifest dependency → glob 13.0.7 → minimatch 10. The advisories concern filesystem traversal after cancellation and pattern amplification. The final backend scan reports **0 known vulnerabilities** after reviewed, scoped overrides: `@forge/manifest` uses glob 14.0.2, and glob uses minimatch 11.0.1. The raw final scan is `dependency-audit.json`. This scanner result is not a security guarantee.
+
+The package manager proposed downgrading Forge API and KVS to older major versions; that would remove required current capabilities and was rejected. The override review inspected the only manifest-package glob call (`await glob(pattern)`) and checked present/missing file cases with the actual patched validator. Node 24 is compatible with the patched versions. The adapter/domain suite passes after the update. Official Forge bundling, deployment and installation have passed separately; those results are not conclusions from the package scan. Installed-site functional checks remain separately documented in TESTING.md.
+
+The frontend has a separate package lock and dependency review maintained with its source. Forge CLI dependencies are separate developer tooling outside this repository and require their own review. Do not confuse a toolchain scan with the deployed application's dependency state.

@@ -1,0 +1,11 @@
+node_modules/
+static/app/dist/
+static/app/dist-demo/
+static/app/qa/artifacts/
+.env
+.env.*
+!.env.example
+*.log
+._*
+.DS_Store
+.forge/

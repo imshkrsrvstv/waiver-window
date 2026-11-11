@@ -1,0 +1,13 @@
+{
+  "name": "waiver-window-browser-qa",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node browser.mjs && node accessibility.mjs && node identifiers.mjs && node cancelled-retry.mjs && node source-binding.mjs && node production.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2",
+    "axe-core": "4.10.3"
+  }
+}

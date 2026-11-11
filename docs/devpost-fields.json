@@ -1,0 +1,51 @@
+{
+  "preparedOn": "2026-11-11",
+  "status": "editorial-draft-not-submitted",
+  "name": "Waiver Window",
+  "tagline": "A Jira approval has a boundary. Check exact scope, allocate its finite allowance, and keep agents read-only.",
+  "category": "Apps for Specialized Industries",
+  "bonus": {
+    "name": null,
+    "state": "not-selected-external-invocation-unverified",
+    "candidate": "Best app with Atlassian MCP"
+  },
+  "builtWith": [
+    "Atlassian Forge",
+    "Jira",
+    "Rovo",
+    "Atlassian MCP",
+    "Forge Custom UI",
+    "JavaScript",
+    "Node.js",
+    "Vite",
+    "HTML",
+    "CSS"
+  ],
+  "projectStory": "## Inspiration\n\nA manufacturing exception can be approved and still fail to cover the next job. It might apply to one supplier, revision, plant, set of lots, time window and quantity. The useful question is not simply whether an approval exists. It is whether this exact job is still inside its boundary.\n\nWaiver Window gives supplier-quality and production coordinators who already work in Jira one place to answer that question.\n\n## What it does\n\nA scoped permit sits beside the proposed job. The app compares the actual conditions, shows the values behind each result, and distinguishes a match from a mismatch or missing evidence. A project administrator explicitly approves the scope; an agent cannot grant that authority.\n\nQuantity is a shared allowance. In the fictional packaging example, a permit allows 500 pieces. Allocating 320 leaves 180. Requests for another 120 and 100 cannot both fit. The app's conditional transaction checks the current ledger and writes the allocation and receipt together. Duplicate retries do not allocate twice; cancellation restores the allowance once and retains its history.\n\nWithin each installation, the first approval also binds the source issue to one permit. Creating another draft from the same source cannot produce a second approved allowance. Revocation or a scope revision does not release that source ownership. Source changes stop positive coverage pending human review. Scope changes require fresh approval, and old receipts keep the facts that applied when they were recorded.\n\n## How it is built\n\nWaiver Window runs on Atlassian Forge, with a Jira project page and issue panel built in Custom UI. Forge functions read the relevant Jira issues as the current user, apply explicit permissions, and use Custom Entity Store conditional transactions for the allowance ledger.\n\nThe domain engine evaluates exact identifiers, dates, source freshness, approval and remaining quantity. It does not ask a language model to decide whether an exception is valid. The authoritative balance comes from direct record reads, rather than a sum over an eventually consistent search.\n\nThe Rovo agent and Atlassian MCP module expose three read-only operations: check coverage, get remaining allowance and explain a reservation. These share the UI's permission-aware service. They cannot edit a permit, approve, allocate or cancel. External access requires administrator enablement and the invoking user's authorization.\n\n## Challenges\n\nThe difficult cases happen between actions: two requests compete, a job changes, the source is edited or an approval is revoked. The implementation keeps those facts versioned, retries safely and retains original receipt snapshots. Unknown evidence stops the decision instead of becoming a reassuring green badge.\n\nThere is also an important boundary: Jira reads and Forge storage are separate systems. The app checks the source at the time of a request, but it cannot lock a Jira document and an external production process into one transaction. It is a review aid and app allocation ledger, not inventory control, a safety certification or physical shipment authority.\n\n## What is distinctive\n\nThe product combines a narrow per-job coverage check, a finite shared allowance and traceable explanations that agents can read without gaining approval authority. The interface makes that mechanism visible: a scoped permit, a measured allowance ruler and inspectable receipts, with complete light and dark themes.\n\nDeviation management already exists. Quality Events for Jira is a direct alternative; Empower QLM describes quantity- and time-bounded temporary deviations; ERP systems such as IFS already connect waiver references to inventory. Waiver Window's proposed advantage is a focused Forge-native workflow and its permission-aware explanation surface. Published competitor material does not establish a missing feature, and no superiority claim is based on an unperformed trial.\n\n## Engineering results\n\nThe reviewed release passes 45 local domain, ledger and platform-adapter tests. A clean extracted release also passes 13 browser journeys, eight automated accessibility states, and targeted checks for tool identifiers, retries, source ownership and strict content security policy. The concurrent-request invariant is covered by the service test; these local results are distinct from installed-site or external-client evidence.\n\nInstalled production verification passed through the normal Jira interface: approve the existing 500-piece draft, allocate 320 pieces leaving 180, allocate a second 120 leaving 60, block a 100-piece request that exceeds that balance by 40, cancel the 120-piece allocation and restore 180 remaining, then reject an 80-piece job for Chennai when Pune is required even though its quantity fits. These are sequential actions, not a live concurrency test.\n\nThree read-only Rovo/MCP tools are implemented. External MCP execution remains unverified: authorization reached the consent screen, but returned an error before the callback. The cause has not been established. The installed Jira workflow is verified separately.\n\n## Next steps\n\nTest the workflow with supplier-quality coordinators already using Jira: wrong revision, competing allocations and an expired or revoked exception. Measure correct decisions and time to supporting evidence, then decide whether a focused pilot is worthwhile. ERP synchronization and finer approval roles should follow that evidence. Customer adoption and time savings have not yet been measured.",
+  "technologyRequirement": "Waiver Window is a Forge app integrated with Jira. Its manifest declares a Jira project page and issue panel backed by Custom UI and Forge functions, plus a Rovo agent and rovo:mcp module. The app reads linked issues as the current Jira user and stores its own permits, jobs, reservations, immutable source bindings and audit events in Forge Custom Entity Store. Conditional transactions enforce shared allowance and immutable source ownership; server-side project and issue permissions protect human actions. The production bundle calls Forge bridge directly and never falls back to local fixtures.",
+  "mcpBonusDraft": "Waiver Window exposes ww-check-coverage, ww-get-remaining and ww-explain-reservation through the rovo:mcp module, using GET actions. An authorized outside agent can inspect the same scoped coverage checks, allowance and receipt provenance as the Jira interface. The tools retain the invoking user's access checks and have no mutation path: approval, allocation, cancellation and scope changes remain explicit human actions. This makes the answer useful to an agent without treating the agent's confidence as permission.",
+  "links": {
+    "judgeInstallation": null,
+    "publicSource": "https://github.com/imshkrsrvstv/waiver-window",
+    "publicSetupGuide": "https://github.com/imshkrsrvstv/waiver-window/blob/main/docs/DEPLOYMENT.md",
+    "youtubeDemo": null,
+    "devpostProject": null,
+    "mcpEndpoint": "https://mcp.atlassian.com/forge/90d15fc4-8d94-4ac8-9775-3dcd62b4d6ae",
+    "sourceRelease": "https://github.com/imshkrsrvstv/waiver-window/releases/tag/v0.1.0"
+  },
+  "thumbnail": "assets/devpost-thumbnail.png",
+  "liveClaimsApproved": false,
+  "personalDeclarations": "Codegeist eligibility/conflict/restricted-party/ownership points confirmed by entrant on 2026-11-11; see SUBMISSION-CHECKLIST.md.",
+  "externalMcpVerification": {
+    "testInstallationExposure": "Enabled through app Details > TOOLS; observed in actual admin UI.",
+    "oauthAndInvocation": "Consent returned a provider error before callback on repeated attempts. No token or authenticated result. Cause unestablished.",
+    "judgeInstallation": "Requires separate enablement/consent on each site."
+  },
+  "verifiedLiveClaims": [
+    "Preserved draft ID on human approval",
+    "Sequential 320 and 120 allocations",
+    "100-piece request blocked against 60 available",
+    "120-piece cancellation restored 180 remaining",
+    "80-piece Chennai job blocked by Pune scope"
+  ]
+}

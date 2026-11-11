@@ -1,0 +1,27 @@
+{
+  "name": "waiver-window-ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode demo --host 127.0.0.1 --port 4351",
+    "build": "vite build",
+    "build:demo": "vite build --mode demo --outDir dist-demo",
+    "preview": "vite preview --host 127.0.0.1 --port 4351"
+  },
+  "dependencies": {
+    "@forge/bridge": "7.3.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.8"
+  },
+  "overrides": {
+    "prosemirror-view": "1.42.3",
+    "@forge/manifest": {
+      "glob": "14.0.2"
+    },
+    "glob": {
+      "minimatch": "11.0.1"
+    }
+  }
+}
