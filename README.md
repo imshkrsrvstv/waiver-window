@@ -46,7 +46,7 @@ Open `http://127.0.0.1:4351/`. This is an explicitly labeled **Local demo** with
 
 The installer preview has been opened and checked: Waiver Window, Get app, For Jira, read-Jira and app-storage permissions, and the linked vendor policies. A separate judge-site installation and clean-site walkthrough have not yet been verified.
 
-Follow [the setup guide](docs/DEPLOYMENT.md) and [fictional walkthrough](docs/DEMO.md). New installations start empty. **The public demo video and Devpost confirmation remain pending.** See [SUBMISSION.md](docs/SUBMISSION.md) for the current gates.
+Follow [the setup guide](docs/DEPLOYMENT.md) and [fictional walkthrough](docs/DEMO.md). New installations start empty. [Watch the public walkthrough](https://youtu.be/YmgVQLZgSYg) — 2 minutes 50.5 seconds, with English subtitles. **Devpost is awaiting human verification; no draft or submission has been created.** See [SUBMISSION.md](docs/SUBMISSION.md) for the current gates.
 
 ## How the decision stays grounded
 
@@ -110,7 +110,7 @@ No customer study or financial outcome is claimed. The proposed validation is fi
 
 [Public source](https://github.com/imshkrsrvstv/waiver-window) · [Setup guide](https://github.com/imshkrsrvstv/waiver-window/blob/main/docs/DEPLOYMENT.md) · [Privacy](https://github.com/imshkrsrvstv/waiver-window/blob/main/PRIVACY.md) · [Evaluation terms](https://github.com/imshkrsrvstv/waiver-window/blob/main/TERMS.md) · [Support](https://github.com/imshkrsrvstv/waiver-window/issues)
 
-The original source is MIT licensed; Atlassian SDK packages retain their own terms. The public source release does not imply a completed Devpost submission, an independent judge-site installation or a finished film. New links are added only after verification.
+The original source is MIT licensed; Atlassian SDK packages retain their own terms. The public source release does not imply a completed Devpost submission, an independent judge-site installation. New links are added only after verification.
 
 ## License and data handling
 

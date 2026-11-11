@@ -45,7 +45,7 @@ Observed 11 November 2026 in the normal production Jira project page. Production
 | Exact plant scope | An 80-piece Chennai job failed the expected Pune plant condition while quantity passed; allocation remained disabled. |
 | External MCP | Exposure enabled. OAuth reached consent but failed before callback; no token or authenticated tool result. Cause unestablished. |
 
-The live run used sequential actions. Actual overlapping concurrency, duplicate requests, duplicate cancellation, competing source approvals, source-edit renewal, revocation, restricted-user access and the issue panel remain unverified on the installed site. Their local tests do not replace that evidence. The public judge installer preview is verified; independent judge-site installation and the final public video remain pending. The current entry makes no live MCP bonus claim.
+The live run used sequential actions. Actual overlapping concurrency, duplicate requests, duplicate cancellation, competing source approvals, source-edit renewal, revocation, restricted-user access and the issue panel remain unverified on the installed site. Their local tests do not replace that evidence. The public judge installer preview is verified; independent judge-site installation remains unverified. The [public film](https://youtu.be/YmgVQLZgSYg) and English subtitles are published. The current entry makes no live MCP bonus claim.
 
 ## Repeat checks
 

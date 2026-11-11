@@ -2,7 +2,7 @@
 
 Replay the core workflow in your own Jira project: approve an exact exception, allocate a finite allowance, reject a request that no longer fits, cancel one allocation, and inspect a plant mismatch. These are **sequential actions**, matching the verified production walkthrough.
 
-The finished local film is **2 minutes 50.5 seconds** and uses actual Jira captures with fictional records. Its public video URL remains pending. The [installation guide](DEPLOYMENT.md#judge-distribution) contains the actual production sharing link. The installer preview has been verified; a separate judge-site installation and clean-site replay have not yet been verified.
+[Watch the public walkthrough](https://youtu.be/YmgVQLZgSYg) — **2 minutes 50.5 seconds**, with English subtitles. It uses actual Jira captures and fictional records; the recorded requests are sequential. The [installation guide](DEPLOYMENT.md#judge-distribution) contains the actual production sharing link. The installer preview has been verified; a separate judge-site installation and clean-site replay have not yet been verified.
 
 ## Install and prepare five fictional issues
 

@@ -28,7 +28,7 @@
     "judgeInstallation": "https://developer.atlassian.com/console/install/90d15fc4-8d94-4ac8-9775-3dcd62b4d6ae?signature=AYABeAtzhE%2FzmYY60ny7bNeXlHIAAAADAAdhd3Mta21zAEthcm46YXdzOmttczp1cy13ZXN0LTI6NzA5NTg3ODM1MjQzOmtleS83MDVlZDY3MC1mNTdjLTQxYjUtOWY5Yi1lM2YyZGNjMTQ2ZTcAuAECAQB4CxqLTo9l4lqXuFjNim1xJM%2Bp%2F3TVP9xHS2BrU5DRRucBV8VdAUh4Z%2BZaj49WpsqDPwAAAH4wfAYJKoZIhvcNAQcGoG8wbQIBADBoBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDDFSAksKaWMa5FpBdQIBEIA7MjTNLZ0dOl3UsMN1Gmi4AsTJfTyG%2Bhv528Ib12qxC%2B6qsP7g4nYVW5PoOV1xeggXdT8oTt9cAZ1YsX0AB2F3cy1rbXMAS2Fybjphd3M6a21zOmV1LXdlc3QtMTo3MDk1ODc4MzUyNDM6a2V5LzQ2MzBjZTZiLTAwYzMtNGRlMi04NzdiLTYyN2UyMDYwZTVjYwC4AQICAHi9bVMAkme4qVQX1fQHo6ePw3H40A7cGfz7yrmSfBWMXgEfpTACAZDyXrmiC0vwkmy%2FAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMHANLEB9NHwfm%2F7jTAgEQgDuSDImoAsW1jIFEGjHdWrS4Ttm94VZFR3ppfJci3mAK0Tcyf4GAq0tjCN1dr%2BlGk3N7Zu9ulkCgFwrStwAHYXdzLWttcwBLYXJuOmF3czprbXM6dXMtZWFzdC0xOjcwOTU4NzgzNTI0MzprZXkvNmMxMjBiYTAtNGNkNS00OTg1LWI4MmUtNDBhMDQ5NTJjYzU3ALgBAgIAeDYASx0XCjkny4iLV6vz%2BKtEGSGT6kdt0QRpkn6D%2FlVEARQqvgJLEKzwThaCXam52okAAAB%2BMHwGCSqGSIb3DQEHBqBvMG0CAQAwaAYJKoZIhvcNAQcBMB4GCWCGSAFlAwQBLjARBAzZEHHoubZCNLXD9pgCARCAO%2FFHB65GbvjWgz8GQPHW%2FndrT5WOQLaRAopTK6OaoXAPlctu9gnUN9x7f4%2F6H9crZz8CfFWUlwq6ODELAgAAAAAMAAAQAAAAAAAAAAAAAAAAAOx1Afrnd68xdB7SouKfrOD%2F%2F%2F%2F%2FAAAAAQAAAAAAAAAAAAAAAQAAADLTf4waqVgPyU9o5atXzynymcSFhieJ9eayer2Q11V5TbF0ZDsa9fcRVaKkDDax4wUga%2Fulorj4z5vgJ6kmSTWjNqk%3D&product=jira",
     "publicSource": "https://github.com/imshkrsrvstv/waiver-window",
     "publicSetupGuide": "https://github.com/imshkrsrvstv/waiver-window/blob/main/docs/DEPLOYMENT.md",
-    "youtubeDemo": null,
+    "youtubeDemo": "https://youtu.be/YmgVQLZgSYg",
     "devpostProject": null,
     "mcpEndpoint": "https://mcp.atlassian.com/forge/90d15fc4-8d94-4ac8-9775-3dcd62b4d6ae",
     "sourceRelease": "https://github.com/imshkrsrvstv/waiver-window/releases/tag/v0.1.0"
@@ -62,5 +62,15 @@
       "No final Devpost submission"
     ]
   },
-  "submissionState": "Start-project human verification pending; no draft or submission yet."
+  "submissionState": "Start-project human verification pending; no draft or submission yet.",
+  "videoVerification": {
+    "state": "public publication confirmed in YouTube",
+    "durationSeconds": 170.526,
+    "sourceSha256": "86aa814b4a26679ad40fe8eaa87051b7899a99b2a030f66c7c5c222996fb072d",
+    "englishCaptions": "51 cues published",
+    "story": "Problem, solution, actual sequential Jira walkthrough and closing",
+    "liveConcurrencyClaim": false,
+    "liveExternalMcpClaim": false,
+    "anonymousAccess": "oEmbed and watch HTTP 200; player readiness OK; public; manual English captions available."
+  }
 }
