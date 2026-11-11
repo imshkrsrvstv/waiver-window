@@ -62,7 +62,7 @@
       "No final Devpost submission"
     ]
   },
-  "submissionState": "Start-project human verification pending; no draft or submission yet.",
+  "submissionState": "Project draft created after human verification; final submission not yet confirmed.",
   "videoVerification": {
     "state": "public publication confirmed in YouTube",
     "durationSeconds": 170.526,
